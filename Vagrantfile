@@ -70,5 +70,13 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
      apt-get update
      apt-get install -y nginx
+     apt-get install git
+     curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+     apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+     apt-get install terraform
+     apt-get install software-properties-common
+     sudo apt-add-repository --yes --update ppa:ansible/ansible
+     apt-get install -y ansible
+     curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
      SHELL
 end
