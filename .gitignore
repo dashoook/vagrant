@@ -1,0 +1,7 @@
+.vagrant
+*.ppk
+
+.terraform
+provider.tf
+*.tfvars
+service-principal
