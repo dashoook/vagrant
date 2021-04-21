@@ -109,7 +109,7 @@ provisioner "remote-exec" {
         ]
     }
 provisioner "local-exec" {
-    command = "ansible-playbook -u ${azurerm_linux_virtual_machine.main.admin_username} -i '${azurerm_linux_virtual_machine.main.public_ip_address}' --extra-vars \"ansible_password=${azurerm_linux_virtual_machine.main.admin_password}\"../Ansible/install.yml "
+    command = "ansible-playbook -u ${azurerm_linux_virtual_machine.main.admin_username} -i '${azurerm_linux_virtual_machine.main.public_ip_address},' --extra-vars \"ansible_password=${azurerm_linux_virtual_machine.main.admin_password}\" ../Ansible/install.yml "
 
 }
 }
