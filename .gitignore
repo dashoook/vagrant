@@ -4,4 +4,7 @@
 .terraform
 provider.tf
 *.tfvars
-service-principal
+service-principal.*
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
