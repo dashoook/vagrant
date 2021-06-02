@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/dashoook/vagrant/nginx-image'
+        git 'https://github.com/dashoook/vagrant'
       }
     }
     stage('Building image') {
