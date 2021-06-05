@@ -1,0 +1,4 @@
+---
+containers: 1
+container_name: docker_nginx
+container_image: dashoook/nginx_soft:18
